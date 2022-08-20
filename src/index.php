@@ -9,7 +9,13 @@ use Ease\TWB5\WebPage;
 
 include_once dirname(__DIR__) . '/vendor/autoload.php';
 
-new \Ease\Locale('en_US','','');
+\Ease\Shared::singleton()->loadConfig(dirname(__DIR__) . '/.env', true);
+
+\Ease\Locale::singleton(null, '../i18n', 'dikety');
+
+session_start();
+
+
 $page = new WebPage(_('Kirtap\'s Disquette museum'));
 
 $page->addCss('
@@ -35,12 +41,16 @@ $page->addToHeader(new Navbar('example', 'nav', []));
 
 $disketer = new Disketa();
 
-$diskety =  $disketer->getColumnsFromSQL();
+$diskety =  $disketer->getColumnsFromSQL(['*']);
 
+$diskList = new \Ease\Html\TableTag(null, ['class'=>'table']);
 
 foreach($diskety as $disketa){
-    $page->addToMain( print_r($disketa,true) );
+    $diskList->addRowColumns([ new UI\DiskLink($disketa) ,  print_r($disketa,true) ]);
 }
+
+$page->addItem( new Container($diskList)  );
+
 
 $page->addToFooter(new Container(new SpanTag('Place sticky footer content here.'), ['class' => 'text-muted']));
 

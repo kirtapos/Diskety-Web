@@ -4,7 +4,7 @@
     "type": "project",
     "require": {
         "vitexsoftware/ease-twbootstrap5": "dev-main",
-        "robmorgan/phinx": "dev-master",
+        "robmorgan/phinx": "*",
         "vitexsoftware/ease-fluentpdo": "dev-main"
     },
     "require-dev": {
@@ -13,7 +13,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Diskety\\": "src/Diskety"
+            "Diskety\\": "src/Diskety",
+            "Diskety\\UI\\": "src/Diskety/UI"
         }
     },
     "authors": [

@@ -21,7 +21,7 @@ final class Diskety extends AbstractMigration
         $diskety = $this->table('diskety');
         $diskety->addColumn('name', 'string', ['limit' => 128])
               ->addColumn('type', 'string', ['limit' => 128, 'comment'=> 'bootdisk,driver or custom'])
-              ->addColumn('capacity', 'integer', ['unsigned' => true, 'comment'=>'disk size in bytes'])
+              ->addColumn('capacity', 'integer', ['signed' => false, 'comment'=>'disk size in bytes'])
               ->create();
     }
 }

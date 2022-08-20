@@ -5,6 +5,10 @@ clean:
 migration: autoload
 	./vendor/bin/phinx migrate -c ./phinx-adapter.php
 
+seed:
+	./vendor/bin/phinx seed:run -c ./phinx-adapter.php
+
+
 autoload:
 	composer update
 
