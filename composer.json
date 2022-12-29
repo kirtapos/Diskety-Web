@@ -8,7 +8,8 @@
         "vitexsoftware/ease-fluentpdo": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*"
     },
     "license": "MIT",
     "autoload": {

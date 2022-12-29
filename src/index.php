@@ -2,6 +2,7 @@
 
 namespace Diskety;
 
+use Diskety\UI\Diskinfo;
 use Ease\Html\SpanTag;
 use Ease\TWB5\Container;
 use Ease\TWB5\Navbar;
@@ -37,7 +38,8 @@ body {
 ');
 
 
-$page->addToHeader(new Navbar('example', 'nav', []));
+$page->addToHeader(new Navbar(new UI\Logo(), 'nav', []));
+
 
 $disketer = new Disketa();
 
@@ -46,12 +48,12 @@ $diskety =  $disketer->getColumnsFromSQL(['*']);
 $diskList = new \Ease\Html\TableTag(null, ['class'=>'table']);
 
 foreach($diskety as $disketa){
-    $diskList->addRowColumns([ new UI\DiskLink($disketa) ,  print_r($disketa,true) ]);
+    $diskList->addRowColumns([ new UI\DiskLink($disketa) ,  new UI\Diskinfo($disketa,[]) ]);
 }
 
 $page->addItem( new Container($diskList)  );
 
 
-$page->addToFooter(new Container(new SpanTag('Place sticky footer content here.'), ['class' => 'text-muted']));
+$page->addToFooter(new Container(new SpanTag(_("number of disks ").count($diskety)), ['class' => 'text-muted']));
 
 echo $page;
