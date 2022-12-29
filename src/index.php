@@ -4,6 +4,7 @@ namespace Diskety;
 
 use Diskety\UI\Diskinfo;
 use Ease\Html\SpanTag;
+use Ease\TWB5\Alert;
 use Ease\TWB5\Container;
 use Ease\TWB5\Navbar;
 use Ease\TWB5\WebPage;
@@ -54,6 +55,6 @@ foreach($diskety as $disketa){
 $page->addItem( new Container($diskList)  );
 
 
-$page->addToFooter(new Container(new SpanTag(_("number of disks ").count($diskety)), ['class' => 'text-muted']));
+$page->addToFooter(new Container(new Alert("success",_("number of disks ").count($diskety)), ['class' => 'text-muted']));
 
 echo $page;
