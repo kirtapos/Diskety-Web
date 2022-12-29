@@ -3,12 +3,12 @@
     "description": "Old Discetes Archive",
     "type": "project",
     "require": {
-        "vitexsoftware/ease-twbootstrap5": "dev-main",
+        "vitexsoftware/ease-twbootstrap5": "*",
         "robmorgan/phinx": "*",
-        "vitexsoftware/ease-fluentpdo": "dev-main"
+        "vitexsoftware/ease-fluentpdo": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "10.0.x-dev"
+        "phpunit/phpunit": "*"
     },
     "license": "MIT",
     "autoload": {
