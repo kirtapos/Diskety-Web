@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d25f30d95b41d7d926925fbb741f386b",
+    "content-hash": "d7267a9bdf6cdcd1431292fd2613befc",
     "packages": [
         {
             "name": "cakephp/core",
@@ -2024,12 +2024,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/VitexSoftware/php-ease-twbootstrap5.git",
-                "reference": "8ebb3ec530ffb928e52c15812acf23b82acd7ee4"
+                "reference": "e33b7a0a63ddcbde7c3bc70c1bfaade546285564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VitexSoftware/php-ease-twbootstrap5/zipball/8ebb3ec530ffb928e52c15812acf23b82acd7ee4",
-                "reference": "8ebb3ec530ffb928e52c15812acf23b82acd7ee4",
+                "url": "https://api.github.com/repos/VitexSoftware/php-ease-twbootstrap5/zipball/e33b7a0a63ddcbde7c3bc70c1bfaade546285564",
+                "reference": "e33b7a0a63ddcbde7c3bc70c1bfaade546285564",
                 "shasum": ""
             },
             "require": {
@@ -2060,7 +2060,7 @@
                 "issues": "https://github.com/VitexSoftware/php-ease-twbootstrap5/issues",
                 "source": "https://github.com/VitexSoftware/php-ease-twbootstrap5/tree/main"
             },
-            "time": "2022-06-03T16:42:52+00:00"
+            "time": "2022-12-29T19:18:58+00:00"
         }
     ],
     "packages-dev": [
@@ -2369,6 +2369,66 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "1.9.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "4b26d138c44dc4deda656f16e7a3174f39e932cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4b26d138c44dc4deda656f16e7a3174f39e932cb",
+                "reference": "4b26d138c44dc4deda656f16e7a3174f39e932cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "default-branch": true,
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/1.9.x"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-12-29T15:54:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
