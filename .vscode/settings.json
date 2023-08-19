@@ -13,5 +13,21 @@
             "username": "kirtap",
             "password": "sql"
         }
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#68d87e",
+        "titleBar.activeBackground": "#68d87e",
+        "titleBar.activeForeground": "#FFFFFF",
+        "titleBar.inactiveBackground": "#68d87e",
+        "titleBar.inactiveForeground": "#FFFFFF",
+        "titleBar.border": "#68d87e",
+        "activityBar.foreground": "#FFFFFF",
+        "statusBar.background": "#68d87e",
+        "statusBar.foreground": "#FFFFFF",
+        "statusBar.debuggingBackground": "#68d87e",
+        "statusBar.debuggingForeground": "#FFFFFF",
+        "tab.activeBorder": "#68d87e",
+        "iLoveWorkSpaceColors": true,
+        "iLoveWorkSpaceRandom": false
+    }
 }
